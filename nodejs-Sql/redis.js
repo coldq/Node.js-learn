@@ -38,7 +38,7 @@ client.lrange('tasks',0,-1,(err,items)=>{
     items.map((item) => console.log(' '+ item));
 });
 
-//集合,元素唯一，重复会忽略
+// 集合,元素唯一，重复会忽略
 client.sadd('ip','12.1.1.1',redis.print);
 client.sadd('ip','12.1.1.1',redis.print);
 client.sadd('ip','122.1.23.2',redis.print);
